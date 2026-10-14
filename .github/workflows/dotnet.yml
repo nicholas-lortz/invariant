@@ -24,6 +24,23 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
+      # Temporary diagnostic step
+      - name: Diagnose central package management
+        run: |
+          echo "Repository root:"
+          pwd
+
+          echo "Package management files:"
+          find . \( -name "Directory.Packages.props" -o -name "Directory.Build.props" \) -print
+
+          echo "Central package management setting:"
+          dotnet msbuild tests/Invariant.Core.Tests/Invariant.Core.Tests.csproj \
+            -getProperty:ManagePackageVersionsCentrally
+
+          echo "Resolved package versions:"
+          dotnet msbuild tests/Invariant.Core.Tests/Invariant.Core.Tests.csproj \
+            -getItem:PackageVersion
+
       - name: Restore dependencies
         run: dotnet restore Invariant.slnx
 
