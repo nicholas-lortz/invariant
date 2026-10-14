@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/samples/" />
+  <Folder Name="/src/">
+    <Project Path="src/Invariant.Core/Invariant.Core.csproj" />
+    <Project Path="src/Invariant.Numerics/Invariant.Numerics.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Invariant.Core.Tests/Invariant.Core.Tests.csproj" />
+    <Project Path="tests/Invariant.Numerics.Tests/Invariant.Numerics.Tests.csproj" />
+  </Folder>
+</Solution>
