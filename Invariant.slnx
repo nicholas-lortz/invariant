@@ -1,5 +1,8 @@
 <Solution>
-  <Folder Name="/samples/" />
+  <Folder Name="/samples/">
+    <Project Path="samples/Invariant.Samples.Statistics/Invariant.Samples.Statistics.csproj" />
+    <Project Path="samples/Invariant.Samples.TimeSeries/Invariant.Samples.TimeSeries.csproj" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/Invariant.Core/Invariant.Core.csproj" />
     <Project Path="src/Invariant.Numerics/Invariant.Numerics.csproj" />
