@@ -20,7 +20,8 @@
   </PackageReference>
 </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Invariant.Core\Invariant.Core.csproj" />
     <ProjectReference Include="..\..\src\Invariant.Numerics\Invariant.Numerics.csproj" />
   </ItemGroup>
-
+  
 </Project>
